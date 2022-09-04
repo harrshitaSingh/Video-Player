@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.vjs-loading-spinner,
+.vjs-big-play-button,
+.vjs-error-display,
+.vjs-modal-dialog {
+  display: none !important;
+}
+.vjs-control-bar > div,
+.vjs-control-bar > button {
+  display: none !important;
+}
+.vjs-control-bar {
+  background-color: transparent !important;
+}
+.vjs-control-bar .vjs-progress-control.vjs-control {
+  display: flex !important;
+  height: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  border-radius: 4px;
+  z-index: 5000;
+}
+.vjs-control-bar {
+  opacity: 0 !important;
+}
+.video-js:hover .vjs-control-bar {
+  opacity: 1 !important;
+}
+.video-js {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.vjs-tech {
+  padding-bottom: 34px !important;
+}
+
+.rc-slider {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  border-radius: 12px;
+  touch-action: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rc-slider * {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rc-slider-rail {
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: #23272c;
+  border-radius: 12px;
+}
+.rc-slider-track {
+  position: absolute;
+  height: 8px;
+  background-color: #767d84;
+  border-radius: 6px;
+  cursor: grab;
+}
+.rc-slider-handle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #767d84;
+  border: solid 2px #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
+  touch-action: pan-x;
+}
+.rc-slider-handle-1 {
+  transform: translateX(0%) !important;
+}
+.rc-slider-handle-2 {
+  transform: translateX(-100%) !important;
+}
+.rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {
+  border-color: #fff;
+}
+.rc-slider-handle:focus {
+  outline: none;
+  box-shadow: none;
+}
+.rc-slider-handle:hover {
+  border-color: #fff;
+}
+.rc-slider-handle:active {
+  border-color: #fff;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.rc-slider-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.video-js.vjs-fill:not(.vjs-audio-only-mode) {
+  border-radius: 4px;
+}
